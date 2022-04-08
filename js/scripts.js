@@ -10,6 +10,8 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
   
   if (this.size === "Medium") {
     this.price += 8;
+  } else if (this.size === "Large") {
+    this.price += 10;
     console.log(this.price);
   }
 };

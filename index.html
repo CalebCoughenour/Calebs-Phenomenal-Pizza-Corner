@@ -11,23 +11,25 @@
   <div class="container">
     <h1>Caleb's Phenomenal Pizza Corner</h1>
     <form id="pizza-form">
-    <h4>Enter topping:</h4>
-        
-    <h4>Choose Pizza Size</h4>
-    <select class="form-control" id="size">
-      <option value="Small">Small</option>
-      <option value="Medium">Medium</option>
-      <option value="Large">Large</option>
-      <option value="X-Large">X-Large</option>
-    </select>
-    <button class="btn btn-primary" type="submit" id="add-topping">Add</button>
-  </form>
-  <div id="topping-list">
-    <ul></ul>
-  </div>
-  <div id="listed-size">
-    <ul></ul>
+      <div class="form-group">
+        <h4>Enter topping:</h4>
+        <input type="checkbox" name="pizza-toppings" value="Pepperoni"> Pepperoni
+        <input type="checkbox" name="pizza-toppings" value="Sausage"> Sausage
+        <input type="checkbox" name="pizza-toppings" value="Ham"> Ham
+        <h4>Choose Pizza Size</h4>
+        <select class="form-control" id="size">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+          <option value="X-Large">X-Large</option>
+        </select>
+        <button class="btn btn-primary" type="submit" id="add-topping">Add</button>
+      </div>
+    </form>
+    
+
+
+
   </div>   
-  </div>
 </body>
 </html>

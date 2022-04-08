@@ -23,10 +23,14 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
 $(document).ready(function() {
   $("#pizza-form").submit(function(e) {
     e.preventDefault();
-
-   
-
     let pizzaSize = $("#size").val();
+    let toppingsArray = [];
+
+    $("input:checkbox[name=pizza-toppings]:checked").each(function() {
+      toppingsArray.push($(this).val());
+    });
+    console.log(toppingsArray);
+    
     
   });
 });

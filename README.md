@@ -16,7 +16,7 @@
 
 Test: "It should not return any input when input is entered"
 Code: let newPizza = new Pizza("test");
-Expected Output: newPizza {toppings: "test"}
+Expected Output: newPizza {toppings: {}, size: {}}
 
 
 
@@ -25,7 +25,7 @@ Expected Output: newPizza {toppings: "test"}
 Test: "It should add a topping to Pizza object toppings if it hasn't been added and will return true"
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni");
-Expected Output: newPizza {toppings: ["Pepperoni"]}
+Expected Output: newPizza {toppings: "Pepperoni"}
                   true
 
 
@@ -33,15 +33,15 @@ Test: "It should not add a topping to Pizza object toppings if it has been added
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni");
 addToppings("Pepperoni");
-Expected Output: newPizza {toppings: ["Pepperoni"]}
+Expected Output: newPizza {toppings: {"Pepperoni"}, size: {}}
                   true
-                  newPizza {toppings: ["Pepperoni"]}
+                  newPizza {toppings: {"Pepperoni"}, size: {}}
                   false
 
 Test: "It should not add multiple toppings if they are entered"
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni", "Olives");
-Expected Output: newPizza {toppings: ["Pepperoni"]}
+Expected Output: newPizza {toppings: "Pepperoni", size: {}}
 
 
 
@@ -51,14 +51,28 @@ Test: "It should remove a entered topping if it is already added and return true
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni", "Olives");
 removeToppings("Pepperoni");
-Expected Output: newPizza {toppings: ["Olives"]}
+Expected Output: newPizza {toppings: "Olives", size: {}}
 
 Test: "It should not remove a topping if it's not been added yet and return false"
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni");
 removeToppings("Olives");
 Expected Output: false
-                newPizza {toppings: ["Pepperoni"]}
+                newPizza {toppings: "Pepperoni", size: {}}
+
+
+**Describe: addSize()**
+
+Test: "It should add a size to Pizza object if it hasn't been added and will return true"
+Code: let newPizza = new Pizza;
+addSize("small");
+Expected Output: newPizza {toppings: {}, size: {"small"}}
+                  true
+
+<!-- **Describe: removeSize()**
+
+Test: "It should remove entered size if it is already added and return true"
+Code: let -->
 
 
 

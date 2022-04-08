@@ -13,10 +13,11 @@
 **Describe: Pizza()**
 
 Test: "It should not return topping and size when input is entered"
-Code: let newPizza = new Pizza("Pepperoni", "Small");
+Code: let newPizza = new Pizza();
 Expected Output: newPizza {toppings: undefined, size: undefined, price: 0}
 
-
+Test: "It should return topping and size when input is entered"
+Code: let newPizza = new Pizza("P)
 
 
 

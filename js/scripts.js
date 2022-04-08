@@ -7,7 +7,11 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.pizzaPriceAdjuster = function() {
   let toppingsAdjuster = this.toppings.length;
-  console.log(toppingsAdjuster);
+  
+  if (this.size === "Medium") {
+    this.price += 8;
+    console.log(this.price);
+  }
 };
 
 

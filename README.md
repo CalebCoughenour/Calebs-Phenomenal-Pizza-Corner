@@ -36,6 +36,14 @@ Code: let newPizza = new Pizza([], "Medium");
       console.log(toppingsAdjuster);
 Expected Output: 0
 
+Test: "It should check for size of pizza beginning with medium and change price to 8"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
+      newPizza.pizzaPriceAdjuster();
+      console.log(newPizza.price);
+Expected Output: 8
+
+
+
 
 
 

@@ -32,6 +32,11 @@ Expected Output: newPizza {toppings: ["Pepperoni"]}
                   newPizza {toppings: ["Pepperoni"]}
                   false
 
+Test: "It should not add multiple toppings if they are entered"
+Code: let newPizza = new Pizza;
+addToppings("Pepperoni", "Olives");
+Expected Output: newPizza {toppings: ["Pepperoni"]}
+
 
 Describe: removeToppings()
 

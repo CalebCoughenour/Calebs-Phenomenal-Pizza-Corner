@@ -1,5 +1,5 @@
-function Pizza(toppings) {
-  this.topping = [toppings];
+function Pizza(topping) {
+  this.topping = [topping];
 }
 
 Pizza.prototype.addToppings = function(topping) {

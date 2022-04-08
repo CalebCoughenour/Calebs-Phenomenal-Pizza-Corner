@@ -1,33 +1,46 @@
 ***********************************************************************************
 **Specs**
 
-1. if no toppings added, return a plain cheese pizza
-2. adding a topping returns that topping on a pizza
-3. adding multiple toppings to pizza returns those toppings on a pizza
-4. if no toppings are added, the base price stays the same
-5. price will increment up based off how many toppings are added
-6. user then will pick small, md, or large (small by default)
-7. final price and pizza with toppings will be displayed
+1. if no toppings added and size is small, price will be $8
+2. adding one topping to the pizza adds $1 to price
+3. adding multiple toppings adds $1 for each topping
+4. user then will pick small, md, or large
+5. final price and pizza with toppings will be displayed
 
 
 **TESTS**
 
 **Describe: Pizza()**
 
-Test: "It should not return any input when input is entered"
-Code: let newPizza = new Pizza("test");
-Expected Output: newPizza {toppings: {}, size: {}}
+Test: "It should not return topping and size when input is entered"
+Code: let newPizza = new Pizza("Pepperoni", "Small");
+Expected Output: newPizza {toppings: undefined, size: undefined, price: 0}
 
 
 
-**Describe: addTopping()**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- **Describe: addTopping()**
 
 Test: "It should add a topping to Pizza object toppings if it hasn't been added and will return true"
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni");
 Expected Output: newPizza {toppings: "Pepperoni"}
                   true
-
 
 Test: "It should not add a topping to Pizza object toppings if it has been added and will return false"
 Code: let newPizza = new Pizza;
@@ -61,7 +74,14 @@ Expected Output: false
                 newPizza {toppings: "Pepperoni", size: {}}
 
 
-**Describe: addSize()**
+
+**Describe: sizePrice()**
+
+Test: "It should set price to 8 if small is chosen"
+Code: let newPizza = new Pizza;
+newPizza.sizePrice("small") -->
+
+<!-- **Describe: addSize()**
 
 Test: "It should add a size to Pizza object if it hasn't been added and will return true"
 Code: let newPizza = new Pizza;
@@ -78,6 +98,12 @@ Expected Output: newPizza {toppings: {}, size: {"Medium"}}
                   newPizza {toppings: {}, size: {"Medium"}}
                   false
 
+Test: "It should replace the size that has been displayed if the size is switched"
+Code let newPizza = new Pizza;
+addSize("Small");
+addSize("Medium");
+Expected Output: newPizza {toppings: {}, size: {"Medium"}} -->
+
 
 
 <!-- **Describe: removeSize()**
@@ -87,16 +113,8 @@ Code: let -->
 
 
 
-**Describe: Topping(topping)**
+<!-- **Describe: Topping(topping)**
 
 Test: "It should return a string with input"
 Code: let newTopping = new Topping("pepperoni");
-Expected Output: newTopping("pepperoni")
-
-
-
-**Describe: Size(size)**
-
-Test: "It should return a string with input"
-Code: let sizedPizza = new Size("medium");
-Expected Output: sizedPizza("medium")
+Expected Output: newTopping("pepperoni") -->

@@ -1,8 +1,18 @@
-function Pizza(toppings, size, price) {
+function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  this.price = price;
+  this.price = 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 // Pizza.prototype.addTopping = function(topping) {
 //   if (!this.toppings[topping]) {

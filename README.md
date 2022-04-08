@@ -9,14 +9,18 @@
 
 Describe: Pizza()
 
-Test: "It should return a string with toppings and a size"
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
-Expected Output: newPizza {toppings: ["Pepperoni", "Olives"], size: "Medium"}
+Test: "It should return a string with toppings"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"]);
+Expected Output: newPizza {toppings: ["Pepperoni", "Olives"]}
 
 
-Test:
-Code:
-Expected Output:
+Describe: addToppings()
+
+Test: "It should add a topping to Pizza object toppings if it hasn't been added and return true"
+Code: let newPizza = new Pizza;
+addToppings("Pepperoni");
+Expected Output: newPizza {toppings: ["Pepperoni"]}
+                  true
 
 
 Test:

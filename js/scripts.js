@@ -5,7 +5,10 @@ function Pizza(toppings, size) {
 }
 
 
-
+Pizza.prototype.pizzaPriceAdjuster = function() {
+  let toppingsAdjuster = this.toppings.length;
+  console.log(toppingsAdjuster);
+};
 
 
 

@@ -17,10 +17,18 @@ Code: let newPizza = new Pizza();
 Expected Output: newPizza {toppings: undefined, size: undefined, price: 0}
 
 Test: "It should return topping and size when input is entered"
-Code: let newPizza = new Pizza("P)
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium")
+Expected Output: newPizza {(toppings: ["Pepperoni", "Olives"], size: "Medium", price: 0)}
 
 
 
+**Describe: pizzaPriceAdjuster()**
+
+Test: "It should receive the length of the toppings array"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
+      newPizza.pizzaPriceAdjuster();
+      console.log(toppingsAdjuster);
+Expected Output: 2
 
 
 

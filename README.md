@@ -20,7 +20,7 @@ Expected Output: newPizza {toppings: "test"}
 
 
 
-**Describe: addToppings()**
+**Describe: addTopping()**
 
 Test: "It should add a topping to Pizza object toppings if it hasn't been added and will return true"
 Code: let newPizza = new Pizza;
@@ -45,7 +45,7 @@ Expected Output: newPizza {toppings: ["Pepperoni"]}
 
 
 
-**Describe: removeToppings()**
+**Describe: removeTopping()**
 
 Test: "It should remove a entered topping if it is already added and return true"
 Code: let newPizza = new Pizza;

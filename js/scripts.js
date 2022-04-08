@@ -46,3 +46,15 @@ function createToppingsUI(topping, pizza) {
   listedTopping.append(removeBtn);
   return listedTopping;
 }
+
+
+$(document).ready(function() {
+  let pizza = new Pizza();
+
+  $("form").submit(function(e) {
+    e.preventDefault();
+    if (pizza.addTopping($("#topping").val())) {
+      $("#topping-list ul").append(createToppingsUI($("#topping").val(), pizza));
+    }
+  });
+});

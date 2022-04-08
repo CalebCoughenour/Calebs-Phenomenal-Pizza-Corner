@@ -42,18 +42,24 @@ Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
       console.log(newPizza.price);
 Expected Output: 8
 
-Test: "It should check for size of pizza beginning with large and change price to 10"
+Test: "It should check for size of pizza, if large change price to 10"
 Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Large");
       newPizza.pizzaPriceAdjuster();
       console.log(newPizza.price);
 Expected Output: 10
 
 
-Test: "It should check for size of pizza beginning with x-large and change price to 13"
+Test: "It should check for size of pizza, if x-large change price to 13"
 Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "X-Large");
       newPizza.pizzaPriceAdjuster();
       console.log(newPizza.price);
 Expected Output: 13
+
+Test: "It should check for size of pizza, if small change price to 6"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Small");
+      newPizza.pizzaPriceAdjuster();
+      console.log(newPizza.price);
+Expected Output: 6
 
 
 

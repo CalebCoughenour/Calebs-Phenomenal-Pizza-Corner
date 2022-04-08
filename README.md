@@ -81,8 +81,8 @@ Expected Output: newPizza {(toppings: ["Pepperoni", "Olives"], size: "Medium", p
 **Describe: Pizza()
 
 Test: "It should not return anything if no input is given"<br>
-Code: let newPizza = new Pizza();
-Expected Output: Pizza { toppings:[], size:, price: 0}
+Code: let newPizza = new Pizza();<br>
+Expected Output: Pizza { toppings:[], size:, price: 0}<br>
 
 Test: "It should return a Pizza object with two properties for toppings and size"<br>
 code: let newPizza = new Pizza(["Pepperoni", "Sausage"], "Medium")'<br>

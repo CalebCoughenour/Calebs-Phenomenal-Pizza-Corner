@@ -30,6 +30,11 @@ Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
       console.log(toppingsAdjuster);
 Expected Output: 2
 
+Test: "The captured length should be 0 if theres no toppings added"
+Code: let newPizza = new Pizza([], "Medium");
+      newPizza.pizzaPriceAdjuster();
+      console.log(toppingsAdjuster);
+Expected Output: 0
 
 
 

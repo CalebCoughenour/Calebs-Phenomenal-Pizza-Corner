@@ -9,14 +9,14 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
   let toppingsAdjuster = this.toppings.length;
   
   if (this.size === "Medium") {
-    this.price += 8;
+    this.price += 8 + toppingsAdjuster;
+    console.log(this.price);
   } else if (this.size === "Large") {
     this.price += 10;
   } else if (this.size === "X-Large") {
     this.price += 13;
   } else {
     this.price += 6;
-    console.log(this.price);
   }
 };
 

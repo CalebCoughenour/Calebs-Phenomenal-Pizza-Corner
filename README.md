@@ -61,6 +61,12 @@ Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Small");
       console.log(newPizza.price);
 Expected Output: 6
 
+Test: "It should add 1 to size price for each pizza topping"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
+      newPizza.pizzaPriceAdjuster();
+      console.log(newPizza.price);
+Expected Output: 10
+
 
 
 

@@ -78,6 +78,16 @@ Expected Output: newPizza {(toppings: ["Pepperoni", "Olives"], size: "Medium", p
 <br>
 <br>
 
+**Describe: Pizza()
+
+Test: "It should not return anything if no input is given"<br>
+Code: let newPizza = new Pizza();
+Expected Output: Pizza { toppings:[], size:, price: 0}
+
+Test: "It should return a Pizza object with two properties for toppings and size"<br>
+code: let newPizza = new Pizza(["Pepperoni", "Sausage"], "Medium")'<br>
+Expected Output: Pizza { toppings: (["Pepperoni", "Sausage"], size: "Medium"), Price: 0}<br>
+
 **Describe: pizzaPriceAdjuster()**
 
 Test: "It should receive the length of the toppings array"

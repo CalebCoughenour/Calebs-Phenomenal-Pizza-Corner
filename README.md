@@ -67,6 +67,20 @@ Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");
       console.log(newPizza.price);
 Expected Output: 10
 
+Test: "It should not add anything to sized price if no toppings are chose"
+Code: let newPizza = new Pizza([], "Medium");
+      newPizza.pizzaPriceAdjuster();
+      console.log(newPizza.price);
+Expected Output: 8
+
+Test: "It should add 1 to size price for each pizza topping regardless of size and amount of toppings"
+Code: let newPizza = new Pizza(["Pepperoni", "Olives", "Artichokes"], "Large");
+      newPizza.pizzaPriceAdjuster();
+      console.log(newPizza.price);
+Expected Output: 13
+
+
+
 
 
 

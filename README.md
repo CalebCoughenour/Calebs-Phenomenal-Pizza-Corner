@@ -69,6 +69,17 @@ addSize("small");
 Expected Output: newPizza {toppings: {}, size: {"small"}}
                   true
 
+Test: "It should not add a size to Pizza object toppings if it has been added and will return false"
+Code: let newPizza = new Pizza;
+addToppings("Medium");
+addToppings("Medium");
+Expected Output: newPizza {toppings: {}, size: {"Medium"}}
+                  true
+                  newPizza {toppings: {}, size: {"Medium"}}
+                  false
+
+
+
 <!-- **Describe: removeSize()**
 
 Test: "It should remove entered size if it is already added and return true"

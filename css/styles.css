@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: orangered;
+  background-image: url("https://t4.ftcdn.net/jpg/02/75/92/41/360_F_275924184_GP4ACV80EK8NokxlFaUB2qykpXKrroqx.jpg");
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
   display: inline-block;
   margin-left: 15px;
   position: relative;
-  width: 20%;
+  width: 30%;
 }
 
 #size:hover {
@@ -33,9 +33,11 @@ h1 {
 }
 
 .card {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   width: 50%;
-  background-color: rgba(245, 245, 245, 0.445);
+  background-color: rgba(245, 245, 245, 0.938);
 }
 
 .pizza-display {
@@ -47,8 +49,8 @@ h1 {
 }
 
 .jumbotron {
-
+  margin-top: 20px;
   display: inline-block;
   width: 50%;  
-  background-color: rgba(245, 245, 245, 0.445);
+  background-color: rgba(245, 245, 245, 0.938);
 }

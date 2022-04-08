@@ -16,16 +16,21 @@ Expected Output: newPizza {toppings: ["Pepperoni", "Olives"]}
 
 Describe: addToppings()
 
-Test: "It should add a topping to Pizza object toppings if it hasn't been added and return true"
+Test: "It should add a topping to Pizza object toppings if it hasn't been added and will return true"
 Code: let newPizza = new Pizza;
 addToppings("Pepperoni");
 Expected Output: newPizza {toppings: ["Pepperoni"]}
                   true
 
 
-Test:
-Code:
-Expected Output:
+Test: "It should not add a topping to Pizza object toppings if it has been added and will return false"
+Code: let newPizza = new Pizza;
+addToppings("Pepperoni");
+addToppings("Pepperoni");
+Expected Output: newPizza {toppings: ["Pepperoni"]}
+                  true
+                  newPizza {toppings: ["Pepperoni"]}
+                  false
 
 
 Test:

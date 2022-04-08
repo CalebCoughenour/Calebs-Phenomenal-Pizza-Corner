@@ -33,6 +33,10 @@ Expected Output: newPizza {toppings: ["Pepperoni"]}
                   false
 
 
-Test:
-Code:
-Expected Output:
+Describe: removeToppings()
+
+Test: "It should remove a entered topping if it is already added"
+Code: let newPizza = new Pizza;
+addToppings("Pepperoni", "Olives");
+removeToppings("Pepperoni");
+Expected Output: newPizza {toppings: ["Olives"]}

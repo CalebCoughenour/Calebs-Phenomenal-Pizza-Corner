@@ -10,3 +10,13 @@ Pizza.prototype.addToppings = function(topping) {
     return false;
   }
 }
+
+Pizza.prototype.removeToppings = function(topping) {
+  if(this.topping[topping]) {
+    delete this.topping[topping]
+    return true;
+  } else {
+    return false;
+  }
+}
+

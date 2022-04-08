@@ -17,7 +17,6 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
   } else {
     this.price += 6 + toppingsAdjuster;
   }
-  console.log(this.price);
 };
 
 $(document).ready(function() {
@@ -35,8 +34,13 @@ $(document).ready(function() {
     
     newPizza.pizzaPriceAdjuster();
     console.log(newPizza);
-    $("#pizza-price").text("Your Grand Total:" + " " + newPizza.price)
-
+    $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
+    
+    if (toppingsArray.length !== 0) {
+    $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray);
+    } else {
+      $("#pizza-toppings-display").text("You chose a plain cheese pizza")
+    }
     
   });
 });

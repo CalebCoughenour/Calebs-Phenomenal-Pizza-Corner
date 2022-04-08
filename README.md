@@ -1,3 +1,6 @@
+***********************************************************************************
+**Specs**
+
 1. if no toppings added, return a plain cheese pizza
 2. adding a topping returns that topping on a pizza
 3. adding multiple toppings to pizza returns those toppings on a pizza
@@ -7,6 +10,7 @@
 7. final price and pizza with toppings will be displayed
 
 
+**TESTS**
 
 **Describe: Pizza()**
 

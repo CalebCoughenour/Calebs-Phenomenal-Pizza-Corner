@@ -23,15 +23,16 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
 $(document).ready(function() {
   $("#pizza-form").submit(function(e) {
     e.preventDefault();
-    let pizzaSize = $("#size").val();
+
+    let pizzaSize = $("#size").val()
     let toppingsArray = [];
 
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       toppingsArray.push($(this).val());
-    });
-    
+    });    
 
     let newPizza = new Pizza(toppingsArray, pizzaSize);
+    
     newPizza.pizzaPriceAdjuster();
     console.log(newPizza);
     $("#pizza-price").text("Your Grand Total:" + " " + newPizza.price)

@@ -29,8 +29,13 @@ $(document).ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       toppingsArray.push($(this).val());
     });
-    console.log(toppingsArray);
     
+
+    let newPizza = new Pizza(toppingsArray, pizzaSize);
+    newPizza.pizzaPriceAdjuster();
+    console.log(newPizza);
+    $("#pizza-price").text("Your Grand Total:" + " " + newPizza.price)
+
     
   });
 });

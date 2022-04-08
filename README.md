@@ -1,4 +1,57 @@
+# _Caleb's Phenomenal Pizza Corner_
+
+#### By _**Caleb Coughenour**_
+
+#### _This is a mock pizza restaraunt website made for an independent project at Epicodus._
+
+<br>
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Javascript_
+* _Jquery_
+
+<br>
+
+## Description
+
+_This webpage was created for an independent project at Epicodus. The page is a mock pizza restaraunt. The page will wait for user to submit the form and will display a price based off how many toppings have been added and what size the pizza is. Size costs are small($6), medium($8), large($10), x-large($13). Each topping adds $1 to total price._
+
+<br>
+
+## Setup/Installation Requirements
+
+* Copy the repository URL named "Calebs-Phenomenal-Pizza-Corner"
+* In a shell program, clone the copied repository to your desktop
+* You can do this using the "git clone" command
+* Open the newly cloned directory named "Calebs-Phenomenal-Pizza-Corner"
+* From the top of this directory, open index.html
+
+<br>
+
+## Known Bugs
+
+* No known bugs
+
+<br>
+
+## License
+
+Licensed under The [MIT](LICENSE)
+
+Copyright (c) _4/8/22_ _Caleb Coughenour_
+
+<br>
+<br>
+<br>
+
 ***********************************************************************************
+
+<br>
+
 **Specs**
 
 1. if no toppings added and size is small, price will be $6

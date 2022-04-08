@@ -20,3 +20,13 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
   console.log(this.price);
 };
 
+$(document).ready(function() {
+  $("#pizza-form").submit(function(e) {
+    e.preventDefault();
+
+   
+
+    let pizzaSize = $("#size").val();
+    
+  });
+});

@@ -18,6 +18,10 @@ h1 {
   width: 20%;
 }
 
+#size:hover {
+  cursor: pointer;
+}
+
 #pizza-toppings-display {
   font-size: large;
   font-family: sans-serif;
@@ -28,12 +32,23 @@ h1 {
   font-family: sans-serif;
 }
 
+.card {
+  display: inline-block;
+  width: 50%;
+  background-color: rgba(245, 245, 245, 0.445);
+}
+
+.pizza-display {
+  display: none;
+}
+
+.emphasis {
+  font-weight: bolder;
+}
 
 .jumbotron {
 
   display: inline-block;
-  margin-left: 15px;
-  position: relative;
   width: 50%;  
   background-color: rgba(245, 245, 245, 0.445);
 }

@@ -33,14 +33,14 @@ $(document).ready(function() {
     let newPizza = new Pizza(toppingsArray, pizzaSize);
     
     newPizza.pizzaPriceAdjuster();
-    console.log(newPizza);
+
     $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
     
     if (toppingsArray.length !== 0) {
     $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray.join(", "));
     } else {
       $("#pizza-toppings-display").text("You chose a plain cheese pizza")
-    }
-    
+    }    
+    $(".pizza-display").show();
   });
 });

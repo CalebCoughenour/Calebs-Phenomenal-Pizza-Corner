@@ -28,7 +28,7 @@ Pizza.prototype.extraCheeseAdjuster = function() {
 
 function uncheckAll() {
   var boxes = document.querySelectorAll("#checkbox");
-  for (var i = 0; i < inputs.length; i++) {
+  for (var i = 0; i < boxes.length; i++) {
       boxes[i].checked = false;
   }
 }

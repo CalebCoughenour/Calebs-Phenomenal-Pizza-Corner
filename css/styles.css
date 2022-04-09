@@ -60,6 +60,7 @@ h1 {
 
 .jumbotron {
   margin-top: 20px;
+  padding: 10px;
   display: inline-block;
   width: 50%;  
   background-color: rgba(245, 245, 245, 0.938);

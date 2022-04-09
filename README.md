@@ -148,12 +148,18 @@ Expected Output: 13<br>
 **Describe: extraCheeseAdjuster()**<br>
 
 Test: "It should add 2 to price if extra cheese is selected"<br>
-Code: let newPizza = new Pizza(["EXTRA CHEESE"], "Small")<br>
+Code: let newPizza = new Pizza([], ["EXTRA CHEESE"], "Small")<br>
       newPizza.extraCheeseAdjuster();<br>
 Expected Output: 7<br>
 
 Test: "It should add 2 to price if extra cheese is selected for any size"<br>
-Code: let newPizza = new Pizza({"EXTRA CHEESE"], "Large")<br>
+Code: let newPizza = new Pizza([], ["EXTRA CHEESE"], "Large")<br>
       newPizza.extraCheeseAdjuster();<br>
       console.log(newPizza.price)<br>
 Expected Output: 12<br>
+
+Test: "It should not add any extra cost if extra cheese is not chosen"<br>
+Code: let newPizza = new Pizza([], [], "Small")<br>
+      newPizza.extraCheeseAdjuster();<br>
+      console.log(newPizza.price)<br>
+Expected Output: 6<br>

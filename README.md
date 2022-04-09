@@ -61,7 +61,8 @@ Copyright (c) _4/8/22_ _Caleb Coughenour_
 5. final price will be toppings + size cost
 6. final price and pizza with toppings will be displayed
 
-
+<br>
+<br>
 **TESTS**
 
 **Describe: Pizza()**
@@ -72,21 +73,11 @@ Expected Output: newPizza {toppings: undefined, size: undefined, price: 0} <br>
 
 Test: "It should return topping and size when input is entered" <br>
 Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium") <br>
-Expected Output: newPizza {(toppings: ["Pepperoni", "Olives"], size: "Medium", price: 0)}<br>
+Expected Output: newPizza {(toppings: ["Pepperoni", "Olives"], size: "Medium", price: 0)} <br>
 
 <br>
 <br>
 <br>
-
-**Describe: Pizza()
-
-Test: "It should not return anything if no input is given"<br>
-Code: let newPizza = new Pizza();<br>
-Expected Output: Pizza { toppings:[], size:, price: 0}<br>
-
-Test: "It should return a Pizza object with two properties for toppings and size"<br>
-code: let newPizza = new Pizza(["Pepperoni", "Sausage"], "Medium")'<br>
-Expected Output: Pizza { toppings: (["Pepperoni", "Sausage"], size: "Medium"), Price: 0}<br>
 
 **Describe: pizzaPriceAdjuster()**
 
@@ -94,56 +85,59 @@ Test: "It should receive the length of the toppings array"
 Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium"); <br>
       newPizza.pizzaPriceAdjuster(); <br>
       console.log(toppingsAdjuster); <br>
-Expected Output: 2<br>
+Expected Output: 2 <br>
 
-Test: "The captured length should be 0 if theres no toppings added"<br>
-Code: let newPizza = new Pizza([], "Medium");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(toppingsAdjuster);<br>
-Expected Output: 0<br>
+Test: "The captured length should be 0 if theres no toppings added" <br>
+Code: let newPizza = new Pizza([], "Medium"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(toppingsAdjuster); <br>
+Expected Output: 0 <br>
 
-Test: "It should check for size of pizza beginning with medium and change price to 8"<br>
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 8<br>
+Test: "It should check for size of pizza beginning with medium and change price to 8" <br>
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 8 <br>
 
-Test: "It should check for size of pizza, if large change price to 10"<br>
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Large");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 10<br>
+Test: "It should check for size of pizza, if large change price to 10" <br>
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Large"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 10 <br>
 
-Test: "It should check for size of pizza, if x-large change price to 13"<br>
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "X-Large");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 13<br>
+Test: "It should check for size of pizza, if x-large change price to 13" <br>
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "X-Large"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 13 <br>
 
-Test: "It should check for size of pizza, if small change price to 6"<br>
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Small");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 6<br>
+Test: "It should check for size of pizza, if small change price to 6" <br>
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Small"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 6 <br>
 
-Test: "It should add 1 to size price for each pizza topping"<br>
-Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 10<br>
+Test: "It should add 1 to size price for each pizza topping" <br>
+Code: let newPizza = new Pizza(["Pepperoni", "Olives"], "Medium"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 10 <br>
 
-Test: "It should not add anything to sized price if no toppings are chose"<br>
-Code: let newPizza = new Pizza([], "Medium");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 8<br>
+Test: "It should not add anything to sized price if no toppings are chose" <br>
+Code: let newPizza = new Pizza([], "Medium"); <br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 8 <br>
 
 Test: "It should add 1 to size price for each pizza topping regardless of size and amount of toppings" <br>
 Code: let newPizza = new Pizza(["Pepperoni", "Olives", "Artichokes"], "Large");<br>
-      newPizza.pizzaPriceAdjuster();<br>
-      console.log(newPizza.price);<br>
-Expected Output: 13<br>
+      newPizza.pizzaPriceAdjuster(); <br>
+      console.log(newPizza.price); <br>
+Expected Output: 13 <br>
 
+<br>
+<br>
+<br>
 
 **Describe: extraCheeseAdjuster()**<br>
 

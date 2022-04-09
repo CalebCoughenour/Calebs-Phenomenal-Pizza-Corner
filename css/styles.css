@@ -32,6 +32,11 @@ h1 {
   font-family: sans-serif;
 }
 
+#xcheese-display{
+  font-size: large;
+  font-family: sans-serif;
+}
+
 .card {
   margin-top: 10px;
   margin-bottom: 10px;

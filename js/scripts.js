@@ -26,16 +26,21 @@ Pizza.prototype.extraCheeseAdjuster = function() {
   }
 };
 
-
-
+function uncheckAll() {
+  var boxes = document.querySelectorAll("#checkbox");
+  for (var i = 0; i < inputs.length; i++) {
+      boxes[i].checked = false;
+  }
+}
 
 $(document).ready(function() {
   $("#pizza-form").submit(function(e) {
     e.preventDefault();
 
-    let pizzaSize = $("#size").val()
     let toppingsArray = [];
     let extraCheeseArray = [];
+
+    let pizzaSize = $("#size").val()
 
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       toppingsArray.push($(this).val());
@@ -50,10 +55,11 @@ $(document).ready(function() {
     newPizza.pizzaPriceAdjuster();
     newPizza.extraCheeseAdjuster();
 
-    $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
     
+    $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
+        
     if (toppingsArray.length !== 0) {
-    $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray.join(", "));
+      $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray.join(", "));
       if (extraCheeseArray.length !== 0) {
         $("#xcheese-display").text("Extra charge for: " + extraCheeseArray.join());
       }
@@ -69,8 +75,13 @@ $(document).ready(function() {
     
     $("#restart-order").click(function() {
       $(".pizza-display").fadeOut();
-    $(".pizza-form-card").fadeIn();
-    $(".price-card").fadeIn();
-    })
+      $(".pizza-form-card").fadeIn();
+      $(".price-card").fadeIn();
+
+      uncheckAll();
+
+    });
+    
+    
   });
 });

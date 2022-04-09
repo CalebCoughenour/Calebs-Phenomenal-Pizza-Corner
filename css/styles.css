@@ -32,9 +32,14 @@ h1 {
   font-family: sans-serif;
 }
 
-#xcheese-display{
+#xcheese-display {
   font-size: large;
   font-family: sans-serif;
+}
+
+#size-display {
+    font-size: large;
+    font-family: sans-serif;
 }
 
 .card {

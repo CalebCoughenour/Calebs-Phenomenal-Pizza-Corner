@@ -57,6 +57,7 @@ $(document).ready(function() {
 
     
     $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
+    $("#size-display").text("Pizza Size: " + newPizza.size);
         
     if (toppingsArray.length !== 0) {
       $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray.join(", "));
@@ -77,9 +78,9 @@ $(document).ready(function() {
       $(".pizza-display").fadeOut();
       $(".pizza-form-card").fadeIn();
       $(".price-card").fadeIn();
-
-      uncheckAll();
-
+      $("#xcheese-display").text("");
+      $("#pizza-toppings-display").text("");
+      uncheckAll();   
     });
     
     

@@ -26,6 +26,9 @@ Pizza.prototype.extraCheeseAdjuster = function() {
   }
 };
 
+
+
+
 $(document).ready(function() {
   $("#pizza-form").submit(function(e) {
     e.preventDefault();
@@ -51,15 +54,17 @@ $(document).ready(function() {
     
     if (toppingsArray.length !== 0) {
     $("#pizza-toppings-display").text("The Toppings You Chose: " + toppingsArray.join(", "));
-      if(extraCheeseArray.length !== 0) {
+      if (extraCheeseArray.length !== 0) {
         $("#xcheese-display").text("Extra charge for: " + extraCheeseArray.join());
       }
-    } else if (extraCheeseArray !== 0) {
+    } else if (extraCheeseArray.length !== 0) {
       $("#xcheese-display").text("Extra charge for: " + extraCheeseArray.join());
     } else {
       $("#pizza-toppings-display").text("You chose a plain cheese pizza");
     }
     
-    $(".pizza-display").show();
+    $(".pizza-display").fadeIn();
+    $(".pizza-form-card").hide();
+    $(".price-card").hide();
   });
 });

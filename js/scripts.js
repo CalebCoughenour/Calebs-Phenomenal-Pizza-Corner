@@ -66,5 +66,11 @@ $(document).ready(function() {
     $(".pizza-display").fadeIn();
     $(".pizza-form-card").hide();
     $(".price-card").hide();
+    
+    $("#restart-order").click(function() {
+      $(".pizza-display").fadeOut();
+    $(".pizza-form-card").fadeIn();
+    $(".price-card").fadeIn();
+    })
   });
 });

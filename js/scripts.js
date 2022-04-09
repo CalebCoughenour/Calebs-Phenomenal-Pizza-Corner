@@ -1,5 +1,6 @@
-function Pizza(toppings, size) {
+function Pizza(toppings, extraCheese, size) {
   this.toppings = toppings;
+  this.extraCheese = extraCheese;
   this.size = size;
   this.price = 0;
 }
@@ -19,20 +20,32 @@ Pizza.prototype.pizzaPriceAdjuster = function() {
   }
 };
 
+Pizza.prototype.extraCheeseAdjuster = function() {  
+  if (this.extraCheese.includes("EXTRA CHEESE")) {
+    this.price += 2;
+  }
+};
+
 $(document).ready(function() {
   $("#pizza-form").submit(function(e) {
     e.preventDefault();
 
     let pizzaSize = $("#size").val()
     let toppingsArray = [];
+    let extraCheeseArray = [];
 
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       toppingsArray.push($(this).val());
-    });    
+    });
+    
+    $("input:checkbox[name=extra-cheese]:checked").each(function() {
+      extraCheeseArray.push($(this).val());
+    })
 
-    let newPizza = new Pizza(toppingsArray, pizzaSize);
+    let newPizza = new Pizza(toppingsArray, extraCheeseArray, pizzaSize);
     
     newPizza.pizzaPriceAdjuster();
+    newPizza.extraCheeseAdjuster();
 
     $("#pizza-price").text("Your Grand Total: $" + newPizza.price);
     

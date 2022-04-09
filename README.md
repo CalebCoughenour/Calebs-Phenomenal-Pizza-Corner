@@ -143,3 +143,11 @@ Code: let newPizza = new Pizza(["Pepperoni", "Olives", "Artichokes"], "Large");<
       newPizza.pizzaPriceAdjuster();<br>
       console.log(newPizza.price);<br>
 Expected Output: 13<br>
+
+
+**Describe: extraCheeseAdjuster()<br>
+
+Test: "It should add 2 to price if extra cheese is selected"<br>
+Code: let newPizza = new Pizza(["EXTRA CHEESE"], "Small")<br>
+      newPizza.extraCheeseAdjuster();<br>
+Expected Output: 7

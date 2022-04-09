@@ -82,7 +82,5 @@ $(document).ready(function() {
       $("#pizza-toppings-display").text("");
       uncheckAll();   
     });
-    
-    
   });
 });
